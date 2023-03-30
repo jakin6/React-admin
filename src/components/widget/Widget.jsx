@@ -1,4 +1,4 @@
-import { KeyboardArrowUp, PersonOutlined, ShoppingCartOutlined } from '@mui/icons-material'
+import { AccountBalanceOutlined, KeyboardArrowUp, MonetizationOnOutlined, PersonOutlined, ShoppingCartOutlined } from '@mui/icons-material'
 import React from 'react'
 import './widget.scss'
 const Widget = ({type}) => {
@@ -24,16 +24,16 @@ const Widget = ({type}) => {
             data={
                 title:"EARNING",
                 isMoney:true,
-                link:"See all users",
-                icon:<PersonOutlined className='icon'/>
+                link:"View net earnings",
+                icon:<MonetizationOnOutlined className='icon'/>
             }
             break;
-        case "user":
+        case "balance":
             data={
-                title:"USERS",
-                isMoney:false,
-                link:"See all users",
-                icon:<PersonOutlined className='icon'/>
+                title:"BALANCE",
+                isMoney:true,
+                link:"See details",
+                icon:<AccountBalanceOutlined className='icon'/>
             }
             break;
         default:
