@@ -1,4 +1,4 @@
-import './sidebar.scss'
+ import './sidebar.scss'
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import { AccountCircleOutlined, CreditCard, Dashboard, ExitToApp, InsertChart, NotificationsNone, PsychologyOutlined, SettingsApplications, SettingsSystemDaydreamOutlined, Store } from '@mui/icons-material';
@@ -66,7 +66,11 @@ const Sidebar = () => {
                 </li>
             </ul>
         </div>
-        <div className="bottom">Color options</div>
+        <div className="bottom">
+            <div className='colorOption'></div>
+            <div className='colorOption'></div>
+            <div className='colorOption'></div>
+        </div>
     </div>
   )
 }

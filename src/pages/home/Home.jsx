@@ -1,12 +1,14 @@
 import React from 'react'
 import Sidebar from '../../components/sidebar/Sidebar'
 import './home.scss'
+import Navbar from '../../components/navbar/Navbar'
 export const Home = () => {
   return (
     <div className='home'>
         <Sidebar/>
         <div className="homeContainer">
-            container
+            <Navbar/>
+            Home container
         </div>
     </div>
   )

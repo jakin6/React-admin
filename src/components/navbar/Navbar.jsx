@@ -1,8 +1,40 @@
+import { ChatBubbleOutlineOutlined, DarkModeOutlined, FullscreenExitOutlined, LanguageOutlined, ListOutlined, NotificationsNoneOutlined, SearchOutlined } from '@mui/icons-material'
 import './navbar.scss'
 
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className='navbar'>
+      <div className="wrapper">
+        <div className="search">
+          <input type="text" placeholder="Search..."/>
+          <SearchOutlined/>
+        </div>
+        <div className="items">
+         <div className="item">
+          <LanguageOutlined/>
+            English
+         </div>
+          <div className="item">
+            <DarkModeOutlined/>
+          </div>        
+          <div className="item">
+            <LanguageOutlined/>
+          </div>        
+          <div className="item">
+            <FullscreenExitOutlined/>
+          </div>        
+          <div className="item">
+            <NotificationsNoneOutlined/>
+          </div>
+          <div className="item">
+            <ChatBubbleOutlineOutlined />
+          </div>
+          <div className="item">
+            <ListOutlined/>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
